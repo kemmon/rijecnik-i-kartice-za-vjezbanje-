@@ -1489,3 +1489,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayEntries(chapterSelect.value);
 });
+// Registracija Service Workera
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/rijecnik-i-kartice-za-vjezbanje-/service-worker.js')
+      .then(registration => {
+        console.log('ServiceWorker registrovan uspješno: ', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registracija neuspješna: ', err);
+      });
+  });
+}
