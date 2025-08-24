@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linie 1 B2 Beruf Rječnik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>Linie 1 B2 Beruf Rječnik</h1>
+            <p>Interaktivni njemačko-bosanski rječnik. Odaberite poglavlje i pretražite riječi.</p>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="chapter-select">Poglavlje:</label>
+                    <select id="chapter-select">
+                        <option value="all">Sva poglavlja</option>
+                        <option value="1">Kapitel 1</option>
+                        <option value="2">Kapitel 2</option>
+                        <option value="3">Kapitel 3</option>
+                        <option value="4">Kapitel 4</option>
+                        <option value="5">Kapitel 5</option>
+                        <option value="6">Kapitel 6</option>
+                        <option value="7">Kapitel 7</option>
+                        <option value="8">Kapitel 8</option>
+                        <option value="9">Kapitel 9</option>
+                        <option value="10">Kapitel 10</option>
+                        <option value="11">Kapitel 11</option>
+                        <option value="12">Kapitel 12</option>
+                        <option value="13">Kapitel 13</option>
+                        <option value="14">Kapitel 14</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="search-input">Pretraga:</label>
+                    <input type="text" id="search-input" placeholder="Traži riječ, prijevod, primjer...">
+                </div>
+            </div>
+        </header>
+
+        <div id="topic-display" class="topic-display"></div>
+
+        <main id="dictionary-list" class="dictionary-list">
+            <!-- Riječi će biti dinamički ubačene ovdje -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
